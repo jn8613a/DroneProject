@@ -1,0 +1,11 @@
+Invoke-RestMethod -Uri "http://127.0.0.1:5000/generate-emissions" `
+-Method Post `
+-Headers @{"Content-Type"="application/json"} `
+-Body '{"altitude": 150, "flight_time": 60, "battery_capacity": 8}' | Format-List
+
+
+
+Invoke-RestMethod -Uri "http://127.0.0.1:5000/generate-emissions" `
+-Method Post `
+-Headers @{"Content-Type"="application/json"} `
+-Body '{"altitude": 110, "flight_time": 30, "battery_capacity": 8}' | Format-List
