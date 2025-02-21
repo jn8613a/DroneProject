@@ -1,11 +1,1 @@
-Invoke-RestMethod -Uri "http://127.0.0.1:5000/generate-emissions" `
--Method Post `
--Headers @{"Content-Type"="application/json"} `
--Body '{"altitude": 150, "flight_time": 60, "battery_capacity": 8}' | Format-List
-
-
-
-Invoke-RestMethod -Uri "http://127.0.0.1:5000/generate-emissions" `
--Method Post `
--Headers @{"Content-Type"="application/json"} `
--Body '{"altitude": 110, "flight_time": 30, "battery_capacity": 8}' | Format-List
+The AI Drone Report Generator is a Flask-based web application that integrates Google's Gemini API to generate detailed mission reports for drone operations based on user input. It takes in parameters such as location, flight time, and mission purpose, then dynamically constructs a customized mission report, which includes findings, risks, and recommendations.
